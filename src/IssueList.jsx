@@ -66,7 +66,7 @@ class IssueList extends React.Component {
         page: $page
       ){ issues{
         id district available name
-        created quantity phone
+        created quantity phone 
       }
       pages
     }

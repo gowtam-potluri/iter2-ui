@@ -5,6 +5,7 @@ import SourceMapSupport from 'source-map-support';
 
 import render from './render.jsx';
 
+const test = "s";
 const app = express();
 
 SourceMapSupport.install();

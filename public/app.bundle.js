@@ -1756,7 +1756,7 @@ var IssueList = /*#__PURE__*/function (_React$Component) {
                 page = parseInt(params.get('page'), 10);
                 if (Number.isNaN(page)) page = 1;
                 vars.page = page;
-                query = "query resList(\n      $available: AvailableType\n      $effortMin: Int\n      $effortMax: Int\n      $hasSelection: Boolean!\n      $selectedId: Int!\n      $page: Int\n    ) {\n      resList(\n        available: $available\n        effortMin: $effortMin\n        effortMax: $effortMax\n        page: $page\n      ){ issues{\n        id district available name\n        created quantity phone\n      }\n      pages\n    }\n      issue(id: $selectedId) @include (if : $hasSelection) {\n        id description\n      }\n    }";
+                query = "query resList(\n      $available: AvailableType\n      $effortMin: Int\n      $effortMax: Int\n      $hasSelection: Boolean!\n      $selectedId: Int!\n      $page: Int\n    ) {\n      resList(\n        available: $available\n        effortMin: $effortMin\n        effortMax: $effortMax\n        page: $page\n      ){ issues{\n        id district available name\n        created quantity phone \n      }\n      pages\n    }\n      issue(id: $selectedId) @include (if : $hasSelection) {\n        id description\n      }\n    }";
                 _context5.next = 16;
                 return Object(_graphQLFetch_js__WEBPACK_IMPORTED_MODULE_7__["default"])(query, vars, showError);
 

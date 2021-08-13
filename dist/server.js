@@ -276,7 +276,7 @@ app.get('/env.js', (req, res) => {
 app.get('*', (req, res, next) => {
   Object(_render_jsx__WEBPACK_IMPORTED_MODULE_4__["default"])(req, res, next);
 });
-const port = process.env.UI_SERVER_PORT || 8000;
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
   console.log(`UI started on port ${port}`);
 });
@@ -1271,7 +1271,7 @@ class IssueList extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
         page: $page
       ){ issues{
         id district available name
-        created quantity phone
+        created quantity phone 
       }
       pages
     }
